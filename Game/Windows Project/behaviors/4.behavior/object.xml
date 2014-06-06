@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<behavior id="id581620" class="InterpolateBehavior" enabled="true" GSCVersion="0.10.0" PGFVersion="0.19">
+  <attributes>
+    <text id="name">Interpolate</text>
+    <text id="bundleName">Interpolate.behavior</text>
+    <boolean id="runToCompletion">true</boolean>
+    <text id="targetAttribute">self.attributes.color.alpha</text>
+    <real id="finalValue">0</real>
+    <real id="duration">1</real>
+    <index id="easing">3</index>
+  </attributes>
+</behavior>

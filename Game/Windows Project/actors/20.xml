@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor id="id993796" PGFVersion="0.19" GSCVersion="0.10.0">
+  <attributes>
+    <text id="name">rain</text>
+    <real id="time">0</real>
+    <point id="position">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <size id="size">
+      <real id="width">457</real>
+      <real id="height">456</real>
+    </size>
+    <angle id="rotation">0</angle>
+    <color id="color">
+      <real id="red">1</real>
+      <real id="green">1</real>
+      <real id="blue">1</real>
+      <real id="alpha">1</real>
+    </color>
+    <image id="image">1.png</image>
+    <text id="tags">Menu Items</text>
+    <boolean id="preloadArt">true</boolean>
+    <real id="id906806" name="Self-X">0</real>
+    <real id="id926370" name="Self-Y">0</real>
+  </attributes>
+  <behaviors>
+    <behavior id="id838189" class="ChangeAttributeAction" enabled="true">
+      <attributes>
+        <text id="name">Change Attribute</text>
+        <text id="bundleName">ChangeAttribute.behavior</text>
+        <text id="targetAttribute">self.attributes.position.y</text>
+        <text id="RHS">
+          <expression>
+            <reference keypath="game.attributes.id937567" />
+          </expression>
+        </text>
+      </attributes>
+    </behavior>
+    <behavior id="id968537" class="ChangeAttributeAction" enabled="true">
+      <attributes>
+        <text id="name">Change Attribute</text>
+        <text id="bundleName">ChangeAttribute.behavior</text>
+        <text id="targetAttribute">self.attributes.position.x</text>
+        <text id="RHS">
+          <expression>
+            <reference keypath="game.attributes.id600615" />
+          </expression>
+        </text>
+      </attributes>
+    </behavior>
+    <behavior id="id371770" class="AnimateBehavior" enabled="true">
+      <attributes>
+        <text id="name">Animate</text>
+        <text id="bundleName">Animate.behavior</text>
+        <text id="images">1	3	2	4	5	6	7	9	8	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24</text>
+        <index id="speed">22</index>
+        <boolean id="loop">true</boolean>
+        <boolean id="restoreActorImage">false</boolean>
+      </attributes>
+    </behavior>
+  </behaviors>
+  <aspects>
+    <graphics>
+      <attributes>
+        <boolean id="visible">true</boolean>
+        <enumeration id="blendingMode">0</enumeration>
+        <enumeration id="horizontalWrap">0</enumeration>
+        <enumeration id="verticalWrap">0</enumeration>
+        <enumeration id="horizontalAnchor">0</enumeration>
+        <enumeration id="verticalAnchor">0</enumeration>
+        <boolean id="flipHorizontally">false</boolean>
+        <boolean id="flipVertically">false</boolean>
+        <integer id="tileWidth">457</integer>
+        <integer id="tileHeight">456</integer>
+      </attributes>
+    </graphics>
+    <motion>
+      <attributes>
+        <point id="linearVelocity">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <real id="angularVelocity">0</real>
+        <real id="maxSpeed">0</real>
+        <boolean id="applyMaxSpeed">false</boolean>
+      </attributes>
+    </motion>
+    <physics>
+      <attributes>
+        <real id="density">1</real>
+        <real id="friction">3</real>
+        <real id="restitution">1</real>
+        <boolean id="fixedRotation">false</boolean>
+        <boolean id="movable">false</boolean>
+        <enumeration id="collisionShape">0</enumeration>
+        <real id="drag">0</real>
+        <real id="angularDrag">0</real>
+      </attributes>
+    </physics>
+  </aspects>
+</actor>

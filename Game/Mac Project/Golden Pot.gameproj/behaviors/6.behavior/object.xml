@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<behavior PGFVersion="0.17" id="id802532" class="InterpolateBehavior" GSCVersion="0.9.90" enabled="true"><attributes><text id="name">Interpolate</text><text id="bundleName">Interpolate.behavior</text><boolean id="runToCompletion">true</boolean><text id="targetAttribute">self.attributes.size.height</text><real id="finalValue">550</real><real id="duration">0.2</real><index id="easing">3</index></attributes></behavior>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<game title="Coin Drop Template" GSCVersion="0.10.0" PGFVersion="0.19">
+  <attributes>
+    <text id="name">default name</text>
+    <real id="time">0</real>
+    <size id="displaySize">
+      <real id="width">1024</real>
+      <real id="height">768</real>
+    </size>
+    <text id="actorTags">Collide	Menu Items	Background	Money Pot	Coins	instructions</text>
+    <real id="id313072" name="Coin-SpinX">0</real>
+    <real id="id213493" name="Coin-SpinY">0</real>
+    <real id="id631072" name="Score">4</real>
+    <real id="id600615" name="End-X">500</real>
+    <real id="id937567" name="End-Y">500</real>
+    <real id="id677147" name="Replay-X">620</real>
+    <real id="id769189" name="Reply-Y">335</real>
+    <boolean id="id994226" name="Win">false</boolean>
+    <boolean id="id425218" name="Lose">false</boolean>
+    <boolean id="id819103" name="Game-Live">true</boolean>
+    <boolean id="id164600" name="Reset">false</boolean>
+    <boolean id="id543504" name="Coin1-Active">true</boolean>
+    <boolean id="id541605" name="Coin2-Active">true</boolean>
+    <index id="id751527" name="CoinCount">0</index>
+    <table id="id664335" name="Message">Message</table>
+    <boolean id="id595779" name="instructions">false</boolean>
+  </attributes>
+  <tags />
+  <resolutionIndependence>1</resolutionIndependence>
+  <instructions />
+  <resolution>3</resolution>
+  <longDescription />
+  <prototypes>
+    <actor id="id110986" />
+    <actor id="id514462" />
+    <actor id="id822650" />
+    <actor id="id696072" />
+    <actor id="id240549" />
+    <actor id="id190289" />
+    <actor id="id154489" />
+    <actor id="id621479" />
+    <actor id="id445845" />
+    <actor id="id448287" />
+    <actor id="id596142" />
+    <actor id="id118210" />
+    <actor id="id817745" />
+    <actor id="id163378" />
+    <actor id="id890113" />
+    <actor id="id221233" />
+    <actor id="id152536" />
+    <actor id="id474108" />
+    <actor id="id893099" />
+    <actor id="id993796" />
+    <actor id="id979344" />
+    <actor id="id823038" />
+    <actor id="id386868" />
+    <actor id="id294218" />
+    <actor id="id271948" />
+    <actor id="id144580" />
+    <actor id="id804802" />
+    <actor id="id247384" />
+    <actor id="id366663" />
+    <actor id="id862161" />
+    <actor id="id646468" />
+    <actor id="id953917" />
+    <actor id="id626801" />
+    <actor id="id968548" />
+    <actor id="id939770" />
+    <actor id="id770907" />
+  </prototypes>
+  <plugins>
+    <attributes id="playhaven" />
+    <attributes id="qqgamecenter">
+      <boolean id="enabled">false</boolean>
+    </attributes>
+    <attributes id="kiip">
+      <text id="appKey" />
+      <text id="appSecret" />
+      <text id="achievementIdentifiers" />
+      <text id="achievementNames" />
+      <text id="leaderboardIdentifiers" />
+      <text id="leaderboardNames" />
+    </attributes>
+    <attributes id="tapMe">
+      <integer id="gameID">0</integer>
+      <text id="augmentIdentifiers" />
+      <text id="augmentNames" />
+      <text id="augmentCategoryIds" />
+      <integer id="activeAugmentID">0</integer>
+    </attributes>
+  </plugins>
+  <scenes>
+    <scene id="id988653" />
+    <scene id="id760050" />
+    <scene id="id649984" />
+    <scene id="id354507" />
+    <scene id="id587216" />
+    <scene id="id542808" />
+    <scene id="id543554" />
+  </scenes>
+</game>

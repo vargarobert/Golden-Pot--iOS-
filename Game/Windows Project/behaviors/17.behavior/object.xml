@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<behavior id="id168484" class="CollideBehavior" enabled="true" GSCVersion="0.10.0" PGFVersion="0.19">
+  <attributes>
+    <text id="name">Collide</text>
+    <text id="bundleName">Collide.behavior</text>
+    <text id="prototypeKey">id110986</text>
+    <text id="actorTag">Collide</text>
+    <index id="mode">1</index>
+  </attributes>
+</behavior>

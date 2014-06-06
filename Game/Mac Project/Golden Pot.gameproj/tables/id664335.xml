@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table version="1.000000" name="Message" numRows="5" numCols="2" flags="0" tableType="2952790016">
+    <rows>
+        <row id="0" name=""/>
+        <row id="1" name=""/>
+        <row id="2" name=""/>
+        <row id="3" name=""/>
+        <row id="4" name=""/>
+    </rows>
+    <columns>
+        <column id="0" name="Win" type="1" readonly="0">Well Done,Awesome!,Your A Pro!,Victory!,Too Easy...</column>
+        <column id="1" name="Lose" type="1" readonly="0">Wrong!,Maybe Next Time,Try Again?,Oh Well...,Too Hard?</column>
+    </columns>
+</table>

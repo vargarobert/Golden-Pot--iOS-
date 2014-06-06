@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<behavior id="id983500" class="TimerBehavior" enabled="true" GSCVersion="0.10.0" PGFVersion="0.19">
+  <attributes>
+    <text id="name">Timer</text>
+    <text id="bundleName">Timer.behavior</text>
+    <index id="timerType">1</index>
+    <real id="interval">0.1</real>
+    <boolean id="runToCompletion">true</boolean>
+  </attributes>
+  <behaviors>
+    <behavior id="id124725" class="ChangeAttributeAction" enabled="true">
+      <attributes>
+        <text id="name">Change Attribute</text>
+        <text id="bundleName">ChangeAttribute.behavior</text>
+        <text id="targetAttribute">game.attributes.id164600</text>
+        <text id="RHS">false</text>
+      </attributes>
+    </behavior>
+  </behaviors>
+</behavior>

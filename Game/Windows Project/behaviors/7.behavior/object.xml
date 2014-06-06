@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<behavior id="id159709" class="RuleBehavior" enabled="true" GSCVersion="0.10.0" PGFVersion="0.19">
+  <attributes>
+    <text id="name">Collide - Coin2</text>
+    <text id="bundleName">Rule.behavior</text>
+    <real id="compoundConditionKind">0</real>
+  </attributes>
+  <conditions>
+    <condition id="id325362" eventType="overlaps or collides" pluginPredicateTypeIndex="0">
+      <attributes>
+        <index id="conditionType">0</index>
+      </attributes>
+      <predicate type="collision">
+        <attributes>
+          <text id="prototypeKey">id917777</text>
+          <text id="actorTag">Collide</text>
+          <real id="mode">0</real>
+        </attributes>
+      </predicate>
+    </condition>
+    <condition id="id350462" eventType="mouse button" pluginPredicateTypeIndex="0">
+      <attributes>
+        <index id="conditionType">1</index>
+        <text id="subjectAttribute">game.attributes.id543504</text>
+      </attributes>
+      <predicate type="boolean">
+        <attributes>
+          <index id="RHS">1</index>
+        </attributes>
+      </predicate>
+    </condition>
+  </conditions>
+  <behaviors>
+    <behavior id="id549330" class="CollideBehavior" enabled="true">
+      <attributes>
+        <text id="name">Collide</text>
+        <text id="bundleName">Collide.behavior</text>
+        <text id="prototypeKey">id917777</text>
+        <text id="actorTag">Collide</text>
+        <index id="mode">0</index>
+      </attributes>
+    </behavior>
+  </behaviors>
+  <elseBehaviors />
+</behavior>

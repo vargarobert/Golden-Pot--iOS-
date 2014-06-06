@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor PGFVersion="0.19" id="id953917" GSCVersion="0.10.1">
+  <attributes>
+    <text id="name">WinMessage</text>
+    <real id="time">0</real>
+    <point id="position">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <size id="size">
+      <real id="width">100</real>
+      <real id="height">100</real>
+    </size>
+    <angle id="rotation">0</angle>
+    <color id="color">
+      <real id="red">1</real>
+      <real id="green">1</real>
+      <real id="blue">1</real>
+      <real id="alpha">0</real>
+    </color>
+    <image id="image"/>
+    <text id="tags"/>
+    <boolean id="preloadArt">true</boolean>
+    <index name="RandomText" id="id975161">0</index>
+    <index name="OldNumber" id="id249207">0</index>
+    <index name="NewNumber" id="id107212">0</index>
+  </attributes>
+  <behaviors>
+    <behavior id="id330124" class="ChangeAttributeAction" enabled="true">
+      <attributes>
+        <text id="name">Change Attribute</text>
+        <text id="bundleName">ChangeAttribute.behavior</text>
+        <text id="targetAttribute">self.attributes.id107212</text>
+        <text id="RHS">
+          <expression>
+            <string>random(1,5)</string>
+          </expression>
+        </text>
+      </attributes>
+    </behavior>
+    <behavior enabled="true" id="id222801" class="RuleBehavior">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">1</real>
+      </attributes>
+      <conditions>
+        <condition id="id553906" pluginPredicateTypeIndex="0" eventType="mouse button">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">game.attributes.id994226</text>
+          </attributes>
+          <predicate type="boolean">
+            <attributes>
+              <index id="RHS">1</index>
+            </attributes>
+          </predicate>
+        </condition>
+        <condition id="id721342" pluginPredicateTypeIndex="0" eventType="mouse button">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">game.attributes.id425218</text>
+          </attributes>
+          <predicate type="boolean">
+            <attributes>
+              <index id="RHS">1</index>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id976361" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">self.attributes.id249207</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="self.attributes.id107212"/>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+        <behavior id="id123770" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">self.attributes.id975161</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="self.attributes.id107212"/>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+      </behaviors>
+      <elseBehaviors/>
+    </behavior>
+    <behavior id="id509128" class="TimerBehavior" enabled="true">
+      <attributes>
+        <text id="name">Timer</text>
+        <text id="bundleName">Timer.behavior</text>
+        <index id="timerType">0</index>
+        <real id="interval">0</real>
+        <boolean id="runToCompletion">true</boolean>
+      </attributes>
+      <behaviors>
+        <behavior enabled="true" id="id474374" class="RuleBehavior">
+          <attributes>
+            <text id="name">Rule</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id294447" pluginPredicateTypeIndex="0" eventType="mouse button">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.id107212</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">=</text>
+                  <real id="RHS">
+                    <expression>
+                      <reference keypath="self.attributes.id249207"/>
+                    </expression>
+                  </real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id657364" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.attributes.id107212</text>
+                <text id="RHS">
+                  <expression>
+                    <string>random(1,5)</string>
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+          </behaviors>
+          <elseBehaviors/>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior enabled="true" id="id623022" class="RuleBehavior">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id849539" pluginPredicateTypeIndex="0" eventType="mouse button">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">game.attributes.id994226</text>
+          </attributes>
+          <predicate type="boolean">
+            <attributes>
+              <index id="RHS">1</index>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id271941" class="DisplayTextBehavior" enabled="true">
+          <attributes>
+            <text id="name">Display Text</text>
+            <text id="bundleName">DisplayText.behavior</text>
+            <text id="text">
+              <expression>
+                <string>tableCellValue(</string>
+                <reference keypath="game.attributes.id664335"/>
+                <string>,</string>
+                <reference keypath="self.attributes.id975161"/>
+                <string>,1)</string>
+              </expression>
+            </text>
+            <text id="font">Futura</text>
+            <real id="size">50</real>
+            <index id="alignment">1</index>
+            <boolean id="wrap">false</boolean>
+            <color id="color">
+              <real id="red">1</real>
+              <real id="green">1</real>
+              <real id="blue">1</real>
+              <real id="alpha">1</real>
+            </color>
+          </attributes>
+        </behavior>
+      </behaviors>
+      <elseBehaviors/>
+    </behavior>
+    <behavior enabled="true" id="id528169" class="RuleBehavior">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id849539" pluginPredicateTypeIndex="0" eventType="mouse button">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">game.attributes.id425218</text>
+          </attributes>
+          <predicate type="boolean">
+            <attributes>
+              <index id="RHS">1</index>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id271941" class="DisplayTextBehavior" enabled="true">
+          <attributes>
+            <text id="name">Display Text</text>
+            <text id="bundleName">DisplayText.behavior</text>
+            <text id="text">
+              <expression>
+                <string>tableCellValue(</string>
+                <reference keypath="game.attributes.id664335"/>
+                <string>,</string>
+                <reference keypath="self.attributes.id975161"/>
+                <string>,2)</string>
+              </expression>
+            </text>
+            <text id="font">Futura</text>
+            <real id="size">50</real>
+            <index id="alignment">1</index>
+            <boolean id="wrap">false</boolean>
+            <color id="color">
+              <real id="red">1</real>
+              <real id="green">1</real>
+              <real id="blue">1</real>
+              <real id="alpha">1</real>
+            </color>
+          </attributes>
+        </behavior>
+      </behaviors>
+      <elseBehaviors/>
+    </behavior>
+  </behaviors>
+  <aspects>
+    <graphics>
+      <attributes>
+        <boolean id="visible">true</boolean>
+        <enumeration id="blendingMode">0</enumeration>
+        <enumeration id="horizontalWrap">0</enumeration>
+        <enumeration id="verticalWrap">0</enumeration>
+        <enumeration id="horizontalAnchor">0</enumeration>
+        <enumeration id="verticalAnchor">0</enumeration>
+        <boolean id="flipHorizontally">false</boolean>
+        <boolean id="flipVertically">false</boolean>
+        <integer id="tileWidth">100</integer>
+        <integer id="tileHeight">100</integer>
+      </attributes>
+    </graphics>
+    <motion>
+      <attributes>
+        <point id="linearVelocity">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <real id="angularVelocity">0</real>
+        <real id="maxSpeed">0</real>
+        <boolean id="applyMaxSpeed">false</boolean>
+      </attributes>
+    </motion>
+    <physics>
+      <attributes>
+        <real id="density">1</real>
+        <real id="friction">3</real>
+        <real id="restitution">1</real>
+        <boolean id="fixedRotation">false</boolean>
+        <boolean id="movable">false</boolean>
+        <enumeration id="collisionShape">0</enumeration>
+        <real id="drag">0</real>
+        <real id="angularDrag">0</real>
+      </attributes>
+    </physics>
+  </aspects>
+</actor>
